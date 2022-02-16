@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Пользователи</title>
+</head>
+
+<body>
+<header>
+    <h1>This is a table of users</h1>
+</header>
+<div class="block-buttons-hide">
+    <button onclick="hideColumn(0)" class="button-hide">Hide or show column: "firstName"</button>
+    <button onclick="hideColumn(1)" class="button-hide">Hide or show column: "lastName"</button>
+    <button onclick="hideColumn(2)" class="button-hide">Hide or show column: "about"</button>
+    <button onclick="hideColumn(3)" class="button-hide">Hide or show column: "eyeColor"</button>
+</div>
+
+<div class="table-container">
+    <table class="table" id="table">
+        <thead>
+        <tr class="table-heading">
+            <th id="#headerFirstName">
+                <p>firstName</p>
+                <button onclick="sortArr(0)" class="triangle">
+                    <svg width="24" height="12">
+                        <polyline
+                                points="24 0, 0 0, 12 12"/>
+                    </svg>
+                </button>
+            </th>
+            <th id="#headerLastName">
+                <p>lastName</p>
+                <button onclick="sortArr(1)" class="triangle">
+                    <svg width="24" height="12">
+                        <polyline
+                                points="24 0, 0 0, 12 12"/>
+                    </svg>
+                </button>
+
+            </th>
+            <th id="#headerAbout">
+                <p>about</p>
+                <button onclick="sortArr(2)" class="triangle">
+                    <svg width="24" height="12">
+                        <polyline
+                                points="24 0, 0 0, 12 12"/>
+                    </svg>
+                </button>
+
+            </th>
+            <th id="#headerEyeColor">
+                <p>eyeColor</p>
+                <button onclick="sortArr(3)" class="triangle">
+                    <svg width="24" height="12">
+                        <polyline
+                                points="24 0, 0 0, 12 12"/>
+                    </svg>
+                </button>
+            </th>
+        </tr>
+        </thead>
+        <tbody id="main-tbody"></tbody>
+    </table>
+</div>
+
+<div class="switcher">
+    <div class="block-numerator-page">
+        <button id="previousPage" class="button-previous-page">Previous Page</button>
+    </div>
+    <p id="numCurrentPage" class="numCurrentPage"></p>
+    <div class="block-numerator-page">
+        <button id="nextPage" class="button-next-page">Next Page</button>
+    </div>
+</div>
+
+<div class="block-change">
+    <textarea class="input" id="input"></textarea>
+    <button onclick="edit()" class="button-output" id="output"> Add changes </button>
+</div>
+
+<script src="script.js"></script>
+<script type="application/json" src="package.json"></script>
+</body>
+</html>

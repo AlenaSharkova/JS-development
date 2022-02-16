@@ -1,0 +1,82 @@
+header {
+  width: 50%;
+  margin: auto;
+}
+.table-container {
+  width: 50%;
+  margin: auto;
+  font-size: 16px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table-heading {
+  background-color: blueviolet;
+  color: aliceblue;
+  height: 40px;
+}
+th, td {
+  border: 2px solid black;
+}
+.triangle, .inv-triangle {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 25px;
+}
+.eyeColor {
+  width: 70px;
+  padding: 30px 0;
+}
+.block-buttons-hide {
+  width: 50%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.button-hide {
+  background-color: #d3b2ec;
+  width: 130px;
+}
+.switcher {
+  width: 50%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.block-numerator-page {
+  width: 150px;
+  height: 30px;
+}
+.button-next-page {
+  background-color: #d3b2ec;
+  width: 100%;
+  height: 100%;
+}
+.button-previous-page {
+  display: none;
+  background-color: #d3b2ec;
+  width: 100%;
+  height: 100%;
+}
+.numCurrentPage {
+  margin: auto;
+}
+.block-change {
+  width: 50%;
+  margin: 10px auto;
+}
+.input {
+  width: 97%;
+  height: 80px;
+  border: none;
+  box-shadow: inset 3px 3px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.button-output {
+  width: 150px;
+  height: 40px;
+  background-color: #d3b2ec;
+}
